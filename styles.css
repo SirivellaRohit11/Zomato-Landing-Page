@@ -336,7 +336,7 @@
     color: gray;
 }
 
-.right .download__app_container div{
+.right .download__app_container div {
     display: flex;
     gap: 1rem;
 }
@@ -344,6 +344,45 @@
 .right .download__app_container div img {
     width: 35%;
 }
+
+.explore__options {
+    width: 80%;
+}
+
+.explore__options_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 1rem;
+}
+
+.explore__options_container h3 {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.explore__options_dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.explore__options_dropdowns div {
+    width: 100%;
+}
+
+.explore__options_dropdowns div select {
+    width: 100%;
+    border: 3px solid #e0e0e0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+
+
 
 
 
@@ -377,5 +416,28 @@
     .hero__section_title {
         font-size: 18px;
         width: 95%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .get__the_app {
+        padding: 2rem 0;
+    }
+
+    .get__the_app .semiContainer {
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .get__the_app .semiContainer .left,
+    .get__the_app .semiContainer .right {
+        flex: 1;
+    }
+
+    .get__the_app .semiContainer {
+        width: 80%;
     }
 }
