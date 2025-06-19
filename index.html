@@ -28,7 +28,7 @@
 
 <body>
 
-  <!-- Banner Section -->
+  <!-- Hero Section -->
   <section class="hero__section">
     <!-- Navigation Bar -->
     <header>
@@ -51,12 +51,21 @@
       <img src="./images/heroSectionLogo.png" alt="Zomato-Logo" class="hero__section_logo">
       <h1 class="hero__section_title">Discover the best foods & drinks in Hyderabad</h1>
       <div class="hero__section_input_container">
-        <input class="input_container_location" type="text" placeholder="Hyderabad" />
-        <input class="input_container_search" type="text" placeholder="Search for a restaurant, cuisine or a dish." />
+        <!-- location field -->
+        <div class="hero__section_location_container">
+          <i class="fa-solid fa-location-dot location__icon"></i>
+          <input class="input_container_location" type="text" placeholder="Hyderabad" />
+        </div>
+        <!-- Search for restaurant field -->
+        <div class="hero__section_search_container">
+          <i class="fa-solid fa-magnifying-glass search__icon"></i>
+          <input class="input_container_search" type="text" placeholder="Search for a restaurant, cuisine or a dish." />
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Cards Section -->
   <section class="container we__offer">
     <!-- card-1 -->
     <div class="we__offer_card">
@@ -92,6 +101,91 @@
         <h2>On Time Delivery</h2>
         <p>Enjoy restaurant recipies at home.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="container collections">
+    <h1>Collection</h1>
+    <div class="sub__heading_container">
+      <span>Explore curated lists of top restaurants, cafes, pubs in Hyderabad based on trends</span>
+      <span>All collections in Hyderabad</span>
+    </div>
+
+    <div class="collections_card_container">
+
+      <div class="card card1">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Live cricket Screening</h4>
+          <span>56 places</span>
+        </div>
+      </div>
+
+      <div class="card card2">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Hyderabad Specials</h4>
+          <span>12 places</span>
+        </div>
+      </div>
+
+      <div class="card card3">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Newly opened Restaurants</h4>
+          <span>20 places</span>
+        </div>
+      </div>
+
+      <div class="card card4">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Pubs near me</h4>
+          <span>16 places</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get the App section -->
+  <section class="container get__the_app">
+
+    <div class="semiContainer">
+      <div class="left">
+        <img src="./images/mobileBanner.png" alt="MobileBanner">
+      </div>
+
+      <div class="right">
+        <h1>Get the Zomato App</h1>
+        <p>We will send you a link, open it and download on your phone</p>
+        <!-- radio button -->
+        <div class="radio__button_container">
+          <div>
+            <input type="radio" id="email" name="download_app" />
+            <label for="email" style="font-size: 14px;">Email</label>
+          </div>
+          <div>
+            <input type="radio" id="phone" name="download_app" />
+            <label for="phone">Phone</label>
+          </div>
+        </div>
+
+        <div class="input_container">
+          <input type="text" placeholder="Email">
+          <button>Share App Link</button>
+        </div>
+
+        <div class="download__app_container">
+          <h5>Download App From</h5>
+          <div>
+            <img src="./images/appleStore.png" alt="Apple Store">
+            <img src="./images/playStore.png" alt="play Store">
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
